@@ -7,7 +7,7 @@ trigger:
 - new-check
 
 pool:
-  vmImage: ubuntu-latest
+ NewPool
 
 steps:
 - task: NodeTool@0
