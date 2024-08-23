@@ -1,0 +1,31 @@
+body {
+  padding-left: 250px; /* Adjust this value based on sidebar width */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #000;
+  border-right: 1px solid #dee2e6;
+  padding-top: 20px;
+}
+
+.nav-link {
+  color: #adb5bd !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+.dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
