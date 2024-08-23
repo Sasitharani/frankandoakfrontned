@@ -58,6 +58,7 @@ function ProductCard({ product }) {
 
   let { thumbnail, price, title,id } = product;
   let{cart,setCart}=useContext(cartContext)
+  const [itemId, setItemId] = useState(null);
   
   let addTocart=()=>{
     let cartObj ={
@@ -67,10 +68,15 @@ function ProductCard({ product }) {
       id,
       qty:1,
     }
-    console.log(cartObj);
-   setCart([...cart,cartObj]) 
+    setItemId(cartObj.id)
     
+    setCart([...cart,cartObj]) 
+  
   }
+  
+  
+
+  
   return (
     <div>
       {/* <Link to={`/product-details/${id}`}> */}
@@ -85,7 +91,11 @@ function ProductCard({ product }) {
       <h3 className="mt-4 text-sm text-gray-700">{title}</h3>
       <p className="mt-1 text-lg font-medium text-gray-900">{price}</p>
       </Link>
+      {   
+      cart.forEach(cart=>{cart.id == itemId ? `<h3 className="mt-4 text-sm text-gray-700">{title}</h3>` : `<h3 className="mt-4 text-sm text-gray-700">{title}</h3>`})
+      }
       <Button onClick={addTocart}>Add to Cart</Button>
+      
     </div>
   );
 }

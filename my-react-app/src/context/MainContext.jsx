@@ -9,7 +9,7 @@ export default function MainContext({children}) {
     console.log(cart);
   },(cart))
 
-  console.log(cart.length);
+  
   let cartItems=cart.length
   return (
     <cartContext.Provider value={cartObj}>
