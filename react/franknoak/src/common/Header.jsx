@@ -5,7 +5,7 @@ import { faSearch, faUser, faHeart, faShoppingBag } from '@fortawesome/free-soli
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="text-xl font-bold">Sasi</div>
         <div className="space-x-4 flex items-center">

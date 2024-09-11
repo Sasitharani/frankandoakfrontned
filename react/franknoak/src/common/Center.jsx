@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function Center() {
     const [showBar, setShowBar] = useState(true);
   return (
-    <div className='grid'>
+
    <div className="relative">
       {showBar && (
 
@@ -32,8 +32,13 @@ export default function Center() {
           <button className="bg-black text-white px-4 py-2 w-40">Men</button>
         </div>
       </div>
+      <div className='flex justify-between bg-black text-white p-3'>
+      <p>Free Shipping over $99</p>
+      <p>Free Returns</p>
+      <p>Earn Points</p>
+      <p>Buy Now, Pay Later</p>
+      </div>
     </div>
-  
-    </div>
+
   )
 }

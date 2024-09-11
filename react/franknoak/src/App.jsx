@@ -6,6 +6,7 @@ import Header from './common/Header'
 import { Routes, Route } from 'react-router-dom';
 import Center from './common/center'
 import Test from './Test'
+import Row2n3 from './common/Row2n3'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
       </Routes>
 
       <Center />
+      <Row2n3 />
 
     </>
   )

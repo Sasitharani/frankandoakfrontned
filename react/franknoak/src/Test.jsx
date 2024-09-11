@@ -5,31 +5,13 @@ const Test = () => {
 
   return (
     <div className="relative">
-      {showBar && (
+      <div class="relative w-full h-64 overflow-hidden group">
+    <img src="https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2110377-012.02_450x.jpg?v=1722283940" alt="Img1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+    <img src="//www.frankandoak.com/cdn/shop/files/2110377-012.01_1200x.jpg?v=1722283940" alt="Img2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100" />
+    </div>
 
-        <div className="absolute top-0 left-0 w-full bg-black text-white p-4 grid-cols-3">
-            <div className="flex justify-end">
-            <button onClick={() => setShowBar(false)} className="bg-white text-black px-1 ">x</button>
-            </div>
-      
-          <div className='flex justify-between'>
-          <p className="font-bold">Win a $5,000 fall wardrobe</p>
-          <p>It's starting to feel like fall— And we're celebrating with a very special giveaway.</p>
-            <button className="bg-white text-black px-4 py-2 my-4">Enter Now</button>
-            </div>
-         
-       
 
-        </div>
-      )}
-      <div className="h-screen bg-cover bg-center flex flex-col justify-center items-center" style={{ backgroundImage: "url('https://www.frankandoak.com/cdn/shop/files/desktop_duo_f142bc55-c4e2-4945-a203-7bad87652202_1536x.jpg?v=1723666577')" }}>
-        <h1 className="text-black text-6xl font-bold mb-4">Fall 2024</h1>
-        <h1 className="text-black text-3xl font-bold mb-4 text-center">The New Classics</h1>
-        <div className="flex space-x-4">
-          <button className="bg-black text-white px-4 py-2 w-40">Women</button>
-          <button className="bg-black text-white px-4 py-2 w-40">Men</button>
-        </div>
-      </div>
+
     </div>
   );
 };
