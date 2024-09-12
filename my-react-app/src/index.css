@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-bottom {
+  box-shadow: 0 4px 4px 2px rgba(26, 25, 25, 0.2);
+}
+
+.border-bottom  {
+  border-bottom: 1px solid #6c757d; /* Adjust the color code as needed */
+}
+.img-small {
+  height: 50%;
+  width: 50%;
+}
+
