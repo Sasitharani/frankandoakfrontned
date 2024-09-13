@@ -10,6 +10,7 @@ import Row2n3 from './common/Row2n3'
 import SSlider from './common/SSlider'
 import DataForSlider from './common/dataForSlider'
 import Seclastrow from './common/Seclastrow'
+import Footer from './common/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,6 +35,7 @@ function App() {
       <Row2n3 />
       <SSlider />
       <Seclastrow />
+      <Footer />
     </>
   )
 }

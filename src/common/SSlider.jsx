@@ -19,12 +19,12 @@ export default function SSlider() {
         nextArrow: <button type="button" className="slick-next">Next</button>
     };
     return (
-      <div className='p-8 bg-slate-300'>
+      <div className='p-8 bg-[#F9F9F9]'>
         <p className='text-4xl p-9 '>Din't Hear it from us?</p>
         <Slider {...settings}>
-          <div className="border-x-gray-400 "><DataForSlider /></div>
-          <div className="border-x-gray-400 "><DataForSlider /></div>
-          <div className="border-x-gray-400"><DataForSlider /></div>
+          <div className="bg-white rounded"><DataForSlider /></div>
+          <div className="bg-white rounded"><DataForSlider /></div>
+          <div className="bg-white rounded"><DataForSlider /></div>
         </Slider>
       </div>
     );
